@@ -75,7 +75,7 @@ def navbar_dropdown() -> rx.Component:
                     rx.menu.trigger(rx.icon("menu", size=30)),
                     rx.menu.content(
                         rx.menu.item("Home", "/"),
-                        rx.menu.item("News", "/news"),
+                        rx.menu.item("News", on_click=events.sharedState.eventMenuItemNews),
                         rx.menu.sub(
                             rx.menu.sub_trigger("Attendees"),
                             rx.menu.sub_content(
@@ -91,10 +91,10 @@ def navbar_dropdown() -> rx.Component:
                                 rx.menu.item("2026", on_click=events.sharedState.eventMenuItem2026),
                             ),
                         ),
-                        rx.menu.item("Players", "/players"),
-                        rx.menu.item("Results", "/results"),
-                        rx.menu.item("Gallery", "/gallery"),
-                        rx.menu.item("Sponsors", "/sponsors"),
+                        rx.menu.item("Players", on_click=events.sharedState.eventMenuItemPlayers),
+                        rx.menu.item("Results", on_click=events.sharedState.eventMenuItemResults),
+                        rx.menu.item("Gallery", on_click=events.sharedState.eventMenuItemGallery),
+                        rx.menu.item("Sponsors", on_click=events.sharedState.eventMenuItemSponsors),
                     ),
                     justify="end",
                 ),
