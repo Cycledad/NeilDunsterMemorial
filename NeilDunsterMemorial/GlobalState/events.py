@@ -1,0 +1,60 @@
+import reflex as rx
+import NeilDunsterMemorial.NeilDunsterMemorial
+
+class sharedState(rx.State):
+
+    @rx.event
+    def eventMenuItem2017(self):
+        return rx.redirect("./attendees2017")
+
+
+    @rx.event
+    def eventMenuItem2018(self):
+        return rx.redirect("./attendees2018")
+
+    @rx.event
+    def eventMenuItem2019(self):
+        return rx.redirect("./attendees2019")
+
+    @rx.event
+    def eventMenuItem2020(self):
+        return rx.redirect("./attendees2020")
+
+    @rx.event
+    def eventMenuItem2021(self):
+        return rx.redirect("./attendees2021")
+
+    @rx.event
+    def eventMenuItem2022(self):
+        return rx.redirect("./attendees2022")
+
+    @rx.event
+    def eventMenuItem2023(self):
+        return rx.redirect("./attendees2023")
+
+    @rx.event
+    def eventMenuItem2024(self):
+        return rx.redirect("./attendees2024")
+
+    @rx.event
+    def eventMenuItem2025(self):
+        return rx.redirect("./attendees2025")
+
+    @rx.event
+    def eventMenuItem2026(self):
+        return rx.redirect("./attendees2026")
+
+
+
+    def updatePreviousLastNameInitial(self, initial: str):
+
+
+           self.prevLastNameInitial = initial
+
+
+
+
+
+
+    prevLastNameInitial: str = "X"
+
