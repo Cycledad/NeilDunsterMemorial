@@ -85,7 +85,7 @@ def actionMenuItem2023():
                 ),
 
                 rx.text(
-                    "Tee off times for June 16, 2023 are:",
+                    "Tee off times for June 16, 2023:",
                     size="6",
                 ),
 
