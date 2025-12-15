@@ -2,34 +2,34 @@ import reflex as rx
 from NeilDunsterMemorial.Nav import navigation
 
 
+class PlayerState(rx.state):
 
+    listPlayers = [
+        {"firstName": "Jeff", "lastName": "Mulcock", "img": "/imgPlayers/jeffMulcock.png", "city": "Ottawa, ON"},
+        {"firstName": "Steve", "lastName": "Gallant", "img": "/imgPlayers/steveGallant.jpg", "city": "Ottawa, ON"},
+        {"firstName": "Neil", "lastName": "Dunster", "img": "/imgPlayers/neilDunster.png", "city": "Ottawa, ON"},
+        {"firstName": "Steve", "lastName": "Arbuckle", "img": "/imgPlayers/steveArbuckle.jpg", "city": "WestPort, ON"},
+        {"firstName": "Brian", "lastName": "Gow", "img": "/imgPlayers/brianGow.jpg", "city": "Ottawa, ON"},
+        {"firstName": "Steve", "lastName": "Fournier", "img": "/imgPlayers/steveFournier.jpg", "city": "Ottawa, ON"},
+        {"firstName": "Brian", "lastName": "Male", "img": "/imgPlayers/brianMale.jpg", "city": "Orleans, ON"},
+        {"firstName": "Wayne", "lastName": "Davis", "img": "/imgPlayers/wayneDavis.jpg", "city": "Orleans, ON"},
+        {"firstName": "Dan", "lastName": "Kalil", "img": "/imgPlayers/danKalil.jpg", "city": "Ottawa, ON"},
+        {"firstName": "Don", "lastName": "Rowan", "img": "/imgPlayers/donRowan.jpg", "city": "Ottawa, ON"},
+        {"firstName": "Tony", "lastName": "Leal", "img": "/imgPlayers/tonyLeal.jpg", "city": "Alliston, ON"},
+        {"firstName": "John", "lastName": "Chatterton", "img": "/imgPlayers/johnChatterton.jpg", "city": "Ottawa, ON"},
+        {"firstName": "Doug", "lastName": "Corrigan", "img": "/imgPlayers/dougCorrigan.jpg", "city": "NC, USA"},
+        {"firstName": "Mark", "lastName": "Campbell", "img": "/imgPlayers/markCampbell.jpg", "city": "Halifax, NS"},
+        {"firstName": "Steve", "lastName": "Turner", "img": "/imgPlayers/steveTurner.jpg", "city": "Ottawa, ON"},
+        {"firstName": "John", "lastName": "Stevens", "img": "/imgPlayers/johnStevens.jpg", "city": "Ottawa, ON"},
+        {"firstName": "Brian", "lastName": "Webster", "img": "/imgPlayers/brianWebster.jpg", "city": "Ottawa, ON"},
+        {"firstName": "Alan", "lastName": "Scott", "img": "/imgPlayers/alanScott.jpg", "city": "Ottawa, ON"},
+        {"firstName": "Mike", "lastName": "Kehoe", "img": "/imgPlayers/mikeKehoe.jpg", "city": "Ottawa, ON"},
+        {"firstName": "Ron", "lastName": "Prosper", "img": "/imgPlayers/ronProsper.jpg", "city": "Ottawa, ON"},
+        {"firstName": "George", "lastName": "Vadeboncoeur", "img": "/imgPlayers/georgeVadeboncoeur.jpg", "city": "Wasaga Beach, ON"},
+        {"firstName": "Tony", "lastName": "Bond", "img": "/imgPlayers/tonyBond.jpg", "city": "Ottawa, ON"},
+        ]
 
-listPlayers = [
-    {"firstName": "Jeff", "lastName": "Mulcock", "img": "/imgPlayers/jeffMulcock.png"},
-    {"firstName": "Steve", "lastName": "Gallant", "img": "/imgPlayers/steveGallant.jpg"},
-    {"firstName": "Neil", "lastName": "Dunster", "img": "/imgPlayers/neilDunster.png"},
-    {"firstName": "Steve", "lastName": "Arbuckle", "img": "/imgPlayers/steveArbuckle.jpg"},
-    {"firstName": "Brian", "lastName": "Gow", "img": "/imgPlayers/brianGow.jpg"},
-    {"firstName": "Steve", "lastName": "Fournier", "img": "/imgPlayers/steveFournier.jpg"},
-    {"firstName": "Brian", "lastName": "Male", "img": "/imgPlayers/brianMale.jpg"},
-    {"firstName": "Wayne", "lastName": "Davis", "img": "/imgPlayers/wayneDavis.jpg"},
-    {"firstName": "Dan", "lastName": "Kalil", "img": "/imgPlayers/danKalil.jpg"},
-    {"firstName": "Don", "lastName": "Rowan", "img": "/imgPlayers/donRowan.jpg"},
-    {"firstName": "Tony", "lastName": "Leal", "img": "/imgPlayers/tonyLeal.jpg"},
-    {"firstName": "John", "lastName": "Chatterton", "img": "/imgPlayers/johnChatterton.jpg"},
-    {"firstName": "Doug", "lastName": "Corrigan", "img": "/imgPlayers/dougCorrigan.jpg"},
-    {"firstName": "Mark", "lastName": "Campbell", "img": "/imgPlayers/markCampbell.jpg"},
-    {"firstName": "Steve", "lastName": "Turner", "img": "/imgPlayers/steveTurner.jpg"},
-    {"firstName": "John", "lastName": "Stevens", "img": "/imgPlayers/johnStevens.jpg"},
-    {"firstName": "Brian", "lastName": "Webster", "img": "/imgPlayers/brianWebster.jpg"},
-    {"firstName": "Alan", "lastName": "Scott", "img": "/imgPlayers/alanScott.jpg"},
-    {"firstName": "Mike", "lastName": "Kehoe", "img": "/imgPlayers/mikeKehoe.jpg"},
-    {"firstName": "Ron", "lastName": "Prosper", "img": "/imgPlayers/ronProsper.jpg"},
-    {"firstName": "George", "lastName": "Vadeboncoeur", "img": "/imgPlayers/georgeVadeboncoeur.jpg"},
-    {"firstName": "Tony", "lastName": "Bond", "img": "/imgPlayers/tonyBond.jpg"},
-    ]
-
-sortedList = list(sorted(listPlayers, key=lambda player: player["lastName"]))
+    sortedList = list(sorted(listPlayers, key=lambda player: player["lastName"]))
 
 
 
@@ -86,9 +86,17 @@ def showImage(player: dict):
 
                     rx.text(
                          f"{player["firstName"]} {player["lastName"]}",
+
                          size="4",
+                         style={"line_height": "1"}  # Adjust the value as needed
                          # align="center"
                     ),
+                    rx.text(
+                        f"{player['city']}",
+                        size="1",
+                        style={"line_height": "1"}  # Adjust the value as needed
+                    ),
+                    spacing="1" # Set spacing of the parent Vstack to 0
                 ),
     )
 

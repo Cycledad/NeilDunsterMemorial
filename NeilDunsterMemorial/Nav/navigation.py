@@ -27,7 +27,7 @@ def navbar_dropdown() -> rx.Component:
                     rx.menu.root(
                         rx.menu.trigger(
                             rx.button(
-                                rx.text("Attendees", size="4", weight="medium", color="black"),
+                                rx.text("Memorial Years", size="4", weight="medium", color="black"),
                                 rx.icon("chevron-down"),
                                 weight="medium",
                                 variant="ghost",
@@ -48,8 +48,8 @@ def navbar_dropdown() -> rx.Component:
                             rx.menu.item("2026", on_click=events.sharedState.eventMenuItem2026),
                         ),
                     ),
-                    navbar_link("Players", "/players"),
-                    navbar_link("Results", "/results"),
+                    navbar_link("Participants", "/players"),
+                    #navbar_link("Results", "/results"),
                     navbar_link("Gallery", "/gallery"),
                     navbar_link("Sponsors", "/sponsors"),
                     justify="end",
@@ -77,7 +77,7 @@ def navbar_dropdown() -> rx.Component:
                         rx.menu.item("Home", "/"),
                         rx.menu.item("News", on_click=events.sharedState.eventMenuItemNews),
                         rx.menu.sub(
-                            rx.menu.sub_trigger("Attendees"),
+                            rx.menu.sub_trigger("Memorial Years"),
                             rx.menu.sub_content(
                                 rx.menu.item("2017", on_click=events.sharedState.eventMenuItem2017),
                                 rx.menu.item("2018", on_click=events.sharedState.eventMenuItem2018),
@@ -91,8 +91,8 @@ def navbar_dropdown() -> rx.Component:
                                 rx.menu.item("2026", on_click=events.sharedState.eventMenuItem2026),
                             ),
                         ),
-                        rx.menu.item("Players", on_click=events.sharedState.eventMenuItemPlayers),
-                        rx.menu.item("Results", on_click=events.sharedState.eventMenuItemResults),
+                        rx.menu.item("Participants", on_click=events.sharedState.eventMenuItemPlayers),
+                        #rx.menu.item("Results", on_click=events.sharedState.eventMenuItemResults),
                         rx.menu.item("Gallery", on_click=events.sharedState.eventMenuItemGallery),
                         rx.menu.item("Sponsors", on_click=events.sharedState.eventMenuItemSponsors),
                     ),
