@@ -59,6 +59,7 @@ def donationJune2025():
             "A total of $750.00 for a donation contribution this year(2025) to the Royal Ottawa Hospital",
             size="6",
             padding="10px",
+            background_color="var(--tomato-3)",
         )
     ),
 
@@ -73,7 +74,7 @@ def news():
          rx.vstack(
             brianWebsterRetirement(),
              wayneGrandChildren(),
-             brianMaleGrandchild(),
+             #brianMaleGrandchild(),
              donationJune2025(),
          )
      ),

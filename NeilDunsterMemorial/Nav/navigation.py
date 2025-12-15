@@ -22,7 +22,7 @@ def navbar_dropdown() -> rx.Component:
                     align_items="center",
                 ),
                 rx.hstack(
-                    navbar_link("Home", "/#"),
+                    navbar_link("Home", "/"),
                     navbar_link("News", "/news"),
                     rx.menu.root(
                         rx.menu.trigger(
@@ -74,7 +74,7 @@ def navbar_dropdown() -> rx.Component:
                 rx.menu.root(
                     rx.menu.trigger(rx.icon("menu", size=30)),
                     rx.menu.content(
-                        rx.menu.item("Home", "/"),
+                        rx.menu.item("Home", on_click=events.sharedState.eventMenuItemHome),
                         rx.menu.item("News", on_click=events.sharedState.eventMenuItemNews),
                         rx.menu.sub(
                             rx.menu.sub_trigger("Memorial Years"),

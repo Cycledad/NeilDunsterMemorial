@@ -47,33 +47,26 @@ class sharedState(rx.State):
 
     @rx.event
     def eventMenuItemNews(self):
-        return rx.redirect("./news")
+        return rx.redirect("/news")
 
     @rx.event
     def eventMenuItemPlayers(self):
-        return rx.redirect("./players")
+        return rx.redirect("/players")
 
     @rx.event
     def eventMenuItemResults(self):
-        return rx.redirect("./results")
+        return rx.redirect("/results")
 
     @rx.event
     def eventMenuItemGallery(self):
-        return rx.redirect("./gallery")
+        return rx.redirect("/gallery")
 
     @rx.event
     def eventMenuItemSponsors(self):
-        return rx.redirect("./sponsors")
+        return rx.redirect("/sponsors")
 
-    def updatePreviousLastNameInitial(self, initial: str):
+    @rx.event
+    def eventMenuItemHome(self):
+        return rx.redirect("/")
 
-
-           self.prevLastNameInitial = initial
-
-
-
-
-
-
-    prevLastNameInitial: str = "X"
 

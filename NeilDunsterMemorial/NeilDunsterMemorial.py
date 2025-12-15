@@ -26,18 +26,16 @@ from .GlobalState import events
 from .pages import *
 
 
-
+@rx.page("/index", title="Home")
 def index():
- # Welcome Page (Index)
 
  return (
-     navigation.navbar_dropdown(),
+    navigation.navbar_dropdown(),
 
     rx.image(
         src="/gallery/neil1.jpg",
         width="100vw",
-        height="90vh"
-    ),
+        height="90vh"    ),
 
  ),
 
