@@ -18,6 +18,33 @@ def actionMenuItem2025():
         ),
 
         rx.text(
+            "Congratulations to this years winning group:",
+            size="5"
+        ),
+        rx.list.unordered(
+            rx.list.item("Captain: Brian Webster"),
+            rx.list.item("Rob Prosper"),
+            rx.list.item("Brian Gow"),
+            rx.list.item("Brian Male"),
+            list_style_type="none",
+
+        ),
+
+        rx.text(
+            "Individual awards:",
+            size="5",
+        ),
+
+        rx.list.unordered(
+            rx.list.item("Closest to the pin: Brian Webster"),
+            rx.list.item("Longest drive: Rob Prosper"),
+            rx.list.item("Low gross: Brian Webster"),
+            rx.list.item("Most honest: Brian Male"),
+            list_style_type="none",
+
+        ),
+
+        rx.text(
             "The following participated:",
             size="6",
             margin_bottom="10px"

@@ -18,7 +18,7 @@ def navbar_dropdown() -> rx.Component:
                         height="auto",
                         border_radius="25%",
                     ),
-                    rx.heading("Neil Dunster Memorial", size="7", weight="bold"),
+                    rx.heading("Neil Dunster Memorial Golf Tournament", size="7", weight="bold"),
                     align_items="center",
                 ),
                 rx.hstack(

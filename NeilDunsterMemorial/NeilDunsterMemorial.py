@@ -19,6 +19,7 @@ from .pages import gallery as gallery
 from .pages import results as results
 from .pages import sponsors as sponsors
 from .pages import news as news
+from .pages import viewer
 
 
 from .Nav import navigation
@@ -32,16 +33,21 @@ def index():
  return (
     navigation.navbar_dropdown(),
 
-    rx.image(
-        src="/gallery/neil1.jpg",
-        width="100vw",
-        height="90vh"    ),
+    rx.center(
+        rx.image(
+            src="/gallery/neil2.jpg",
+            width="80vw",
+            height="80vh",
+            margin="25px"
+        ),
+    )
 
  ),
 
 
 app = rx.App()
 app.add_page(index)
+app.add_page(viewer.viewer)
 app.add_page(page2017.attendees2017)
 app.add_page(page2018.attendees2018)
 app.add_page(page2019.attendees2019)
