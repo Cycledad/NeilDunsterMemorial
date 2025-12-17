@@ -20,14 +20,36 @@ def actionMenuItem2017():
                 "Accommodations were located across the street from the golf course at the Glen House Resort. ",
                 " The format to be used is the first round is our actual score to make up the best ball groups for the 2nd round.",
                 size="6",
-                margin_bottom="25px"
+                margin_bottom="10px"
             ),
 
+            rx.text(
+                "Tee times and groups for Saturday are:",
+                size="6",
+                margin_bottom="10px"
+            ),
+
+            rx.list.unordered(
+                rx.list.item("10:50 Tony, Jeff, Barnie, Gordie"),
+                rx.list.item("11:00 Webby, Neil, Arby and Mark"),
+                rx.list.item("11:10 Wayne, Doug, Al and Johnny"),
+
+                # list_style_type="none",
+                style={"font-size": "20px"},
+            ),
+
+            rx.text(
+                "Tee times for Sunday are: 10:10, 10:20 and 10:30",
+                size="6",
+                margin_bottom="10px",
+                margin_top="10px"
+            ),
 
             rx.text(
                 "The following participated:",
                 size="6",
-                margin_bottom="10px"
+                margin_bottom="10px",
+                margin_top="10px"
 
             ),
 
@@ -73,6 +95,28 @@ def actionMenuItem2017():
                     " The format to be used is the first round is our actual score to make up the best ball groups for the 2nd round.",
                     size="6",
                     margin_bottom="25px"
+                ),
+
+                rx.text(
+                    "Tee times and groups for Saturday are:",
+                    size="6",
+                    margin_bottom="10px"
+                ),
+
+                rx.list.unordered(
+                    rx.list.item("10:50 Tony, Jeff, Barnie, Gordie"),
+                    rx.list.item("11:00 Webby, Neil, Arby and Mark"),
+                    rx.list.item("11:10 Wayne, Doug, Al and Johnny"),
+
+                    # list_style_type="none",
+                    style={"font-size": "20px"},
+                ),
+
+                rx.text(
+                    "Tee times for Sunday are: 10:10, 10:20 and 10:30",
+                    size="6",
+                    margin_bottom="10px",
+                    margin_top="10px"
                 ),
 
                 rx.text(

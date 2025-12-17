@@ -18,9 +18,25 @@ def actionMenuItem2023():
                 margin_bottom="10px",
             ),
 
+            rx.text("Agenda:", size="6"),
+            rx.list.unordered(
+                rx.list.item("June 16 - Check in at the resort TO GET YOUR GOLF PASSES"),
+                rx.list.item("11:50 start time at Smuggler's Glen"),
+                rx.list.item("After 4 - check into your accommodation"),
+                rx.list.item("7:15 dinner at Shipman's Dining room"),
+                rx.list.item("June 17 - Breakfast starts at 7:00"),
+                rx.list.item("9:00 start at Smuggler's Glen"),
+                rx.list.item("6:00 dinner at Shipman's Dining room"),
+                rx.list.item("June 18 -  Breakfast starts at 7:00"),
+                rx.list.item("Check out of room by 11:00 "),
+                list_style_type="none",
+            ),
+
+
             rx.text(
                 "Tee off times for June 16, 2023 are:",
                 size="6",
+                margin_top="10px",
             ),
 
             rx.list.unordered(
@@ -63,7 +79,7 @@ def actionMenuItem2023():
                 rx.image(
                     src="/gallery/year2023.jpg",
                     alt="year2023",
-                    width="400px",
+                    width="500px",
                     height="400px",
                     margin_left="200px",
                 )

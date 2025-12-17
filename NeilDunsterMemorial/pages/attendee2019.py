@@ -5,37 +5,90 @@ from ..Nav import navigation
 
 def actionMenuItem2019():
     return rx.container(
+        rx.desktop_only(
+            rx.text(
+                "2019",
+                size="9",
+                weight="bold",
+                margin_bottom="25px"
 
-        rx.text(
-            "2019",
-            size="9",
-            weight="bold",
-            margin_bottom="25px"
+            ),
 
+            rx.text(
+                "The 3rd annual Neil Dunster Memorial was held June 21 - 22, 2019.",
+                size="6",
+                margin_bottom="10px",
+            ),
+
+            rx.text(
+                "The first tee off time for June 21, 2019 is 1:20:",
+                size="6",
+                margin_bottom="25px"
+            ),
+            rx.hstack(
+
+                rx.list.unordered(
+                    rx.list.item("Antonio Leal and Jeff Mulcock, Doug Corrigan and Wayne Davis"),
+                    rx.list.item("Al Scott and Mark Campbell, Steve Arbuckle and John Stevens"),
+                    rx.list.item("Steve Gallant and Brian Male, Brian Gow and Steve Turner"),
+                    rx.list.item("Neil Dunster and George Vadebonceour, Mike Kehoe and Brian Webster"),
+                    rx.list.item("Tony Bond and Dan Kalil, John Chatterton"),
+                    #list_style_type="none",
+                    style={"font-size": "20px"},
+                ),
+
+                rx.image(
+                    src="./gallery/year2019.jpg",
+                    width="600px",
+                    height="500px",
+                    margin_top="25px",
+                    margin_left='50px',
+
+                )
+            )
         ),
+        rx.mobile_and_tablet(
 
-        rx.text(
-            "The 3rd annual Neil Dunster Memorial was held June 21 - 22, 2019.",
-            size="6",
-            margin_bottom="10px",
-        ),
+            rx.text(
+                "2019",
+                size="9",
+                weight="bold",
+                margin_bottom="25px"
 
-        rx.text(
-            "The first tee off time for June 21, 2019 is 1:20:",
-            size="6",
-            margin_bottom="25px"
-        ),
+            ),
 
-        rx.list.unordered(
-            rx.list.item("Antonio Leal and Jeff Mulcock, Doug Corrigan and Wayne Davis"),
-            rx.list.item("Al Scott and Mark Campbell, Steve Arbuckle and John Stevens"),
-            rx.list.item("Steve Gallant and Brian Male, Brian Gow and Steve Turner"),
-            rx.list.item("Neil Dunster and George Vadebonceour, Mike Kehoe and Brian Webster"),
-            rx.list.item("Tony Bond and Dan Kalil, John Chatterton"),
-            #list_style_type="none",
-            style={"font-size": "20px"},
-        ),
+            rx.text(
+                "The 3rd annual Neil Dunster Memorial was held June 21 - 22, 2019.",
+                size="6",
+                margin_bottom="10px",
+            ),
 
+            rx.text(
+                "The first tee off time for June 21, 2019 is 1:20:",
+                size="6",
+                margin_bottom="25px"
+            ),
+
+            rx.image(
+                src="./gallery/year2019.jpg",
+                width="600px",
+                height="500px",
+                #margin_top="25px",
+                #margin_left='50px',
+
+            ),
+
+            rx.list.unordered(
+                rx.list.item("Antonio Leal and Jeff Mulcock, Doug Corrigan and Wayne Davis"),
+                rx.list.item("Al Scott and Mark Campbell, Steve Arbuckle and John Stevens"),
+                rx.list.item("Steve Gallant and Brian Male, Brian Gow and Steve Turner"),
+                rx.list.item("Neil Dunster and George Vadebonceour, Mike Kehoe and Brian Webster"),
+                rx.list.item("Tony Bond and Dan Kalil, John Chatterton"),
+                # list_style_type="none",
+                style={"font-size": "20px"},
+            ),
+
+        )
     )
 
 
