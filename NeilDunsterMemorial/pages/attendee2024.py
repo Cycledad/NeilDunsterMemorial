@@ -24,16 +24,16 @@ def actionMenuItem2024():
                 size="5",
             ),
             rx.text(
-                "Special thanks to Turbo for the cap gift awards. ",
+                "Special thanks to Steve Turner for the cap gift awards. ",
                 size="5",
             ),
             rx.text(
-                "Special thanks to Webby the official safe keeper of our team trophy and individual trophy awards and for ",
+                "Special thanks to Brian Webster the official safe keeper of our team trophy and individual trophy awards and for ",
                 "annually getting our yearly winners engraved on our awards.",
                 size = "5",
             ),
             rx.text(
-                "Special thanks to Dougie our golf director and helping out with the tournament scores and playoff format. ",
+                "Special thanks to Doug Corrigan our golf director and helping out with the tournament scores and playoff format. ",
                 "The grill and sausages were a hit and many thanks for keeping us updated and our glasses full with the latest "
                 "cocktail trends in today’s market.  The transfusions were great 🥃 ",
                 size="5",
@@ -106,16 +106,16 @@ def actionMenuItem2024():
                     size="5",
                 ),
                 rx.text(
-                    "Special thanks to Turbo for the cap gift awards. ",
+                    "Special thanks to Steve Turner for the cap gift awards. ",
                     size="5",
                 ),
                 rx.text(
-                    "Special thanks to Webby the official safe keeper of our team trophy and individual trophy awards and for ",
+                    "Special thanks to Brian Webster the official safe keeper of our team trophy and individual trophy awards and for ",
                     "annually getting our yearly winners engraved on our awards.",
                     size="5",
                 ),
                 rx.text(
-                    "Special thanks to Dougie our golf director and helping out with the tournament scores and playoff format. ",
+                    "Special thanks to Doug Corrigan our golf director and helping out with the tournament scores and playoff format. ",
                     "The grill and sausages were a hit and many thanks for keeping us updated and our glasses full with the latest "
                     "cocktail trends in today’s market.  The transfusions were great 🥃 ",
                     size="5",

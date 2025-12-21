@@ -33,13 +33,25 @@ def index():
  return (
     navigation.navbar_dropdown(),
 
-    rx.center(
-        rx.image(
-            src="/gallery/neil2.jpg",
-            width="80vw",
-            height="80vh",
-            margin="25px"
-        ),
+    rx.desktop_only(
+        rx.center(
+            rx.image(
+                src="/gallery/neil2.jpg",
+                width="80vw",
+                height="80vh",
+                margin="25px"
+            ),
+        )
+    ),
+    rx.mobile_and_tablet(
+ rx.center(
+            rx.image(
+                src="/gallery/neil2.jpg",
+                width="80vw",
+                height="60vh",
+                margin="25px"
+            ),
+        )
     )
 
  ),

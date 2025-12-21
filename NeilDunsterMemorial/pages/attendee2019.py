@@ -21,7 +21,7 @@ def actionMenuItem2019():
             ),
 
             rx.text(
-                "The first tee off time for June 21, 2019 is 1:20:",
+                "The first tee off time for is 1:20:",
                 size="6",
                 margin_bottom="25px"
             ),
@@ -64,7 +64,7 @@ def actionMenuItem2019():
             ),
 
             rx.text(
-                "The first tee off time for June 21, 2019 is 1:20:",
+                "The first tee off time is 1:20:",
                 size="6",
                 margin_bottom="25px"
             ),
