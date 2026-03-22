@@ -24,6 +24,7 @@ def navbar_dropdown() -> rx.Component:
                 rx.hstack(
                     navbar_link("Home", "/"),
                     navbar_link("News", "/news"),
+                    navbar_link("Profile", "/profile"),
                     rx.menu.root(
                         rx.menu.trigger(
                             rx.button(
@@ -76,6 +77,7 @@ def navbar_dropdown() -> rx.Component:
                     rx.menu.content(
                         rx.menu.item("Home", on_click=events.sharedState.eventMenuItemHome),
                         rx.menu.item("News", on_click=events.sharedState.eventMenuItemNews),
+                        rx.menu.item("Profile", on_click=events.sharedState.eventMenuItemNews),
                         rx.menu.sub(
                             rx.menu.sub_trigger("Memorial Years"),
                             rx.menu.sub_content(

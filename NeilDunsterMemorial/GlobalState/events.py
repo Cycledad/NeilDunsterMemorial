@@ -50,6 +50,10 @@ class sharedState(rx.State):
         return rx.redirect("/news")
 
     @rx.event
+    def eventMenuItemNews(self):
+        return rx.redirect("/profile")
+
+    @rx.event
     def eventMenuItemPlayers(self):
         return rx.redirect("/players")
 

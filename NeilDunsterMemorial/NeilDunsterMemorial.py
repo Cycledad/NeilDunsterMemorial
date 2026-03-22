@@ -20,6 +20,7 @@ from .pages import results as results
 from .pages import sponsors as sponsors
 from .pages import news as news
 from .pages import viewer
+from .pages import profile as profile
 
 
 from .Nav import navigation
@@ -36,7 +37,7 @@ def index():
     rx.desktop_only(
         rx.center(
             rx.image(
-                src="/gallery/neil2.jpg",
+                src="/logo.jpg",
                 width="80vw",
                 height="80vh",
                 margin="25px"
@@ -46,7 +47,7 @@ def index():
     rx.mobile_and_tablet(
  rx.center(
             rx.image(
-                src="/gallery/neil2.jpg",
+                src="/logo.jpg",
                 width="80vw",
                 height="60vh",
                 margin="25px"
@@ -75,3 +76,4 @@ app.add_page(gallery.gallery)
 app.add_page(results.results)
 app.add_page(sponsors.sponsors)
 app.add_page(news.news)
+app.add_page(profile.profile)
