@@ -40,7 +40,7 @@ def index():
                 src="/logo.jpg",
                 width="65vw",
                 height="80vh",
-                margin="125px"
+                margin="100px"
             ),
         )
     ),
