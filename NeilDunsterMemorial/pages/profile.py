@@ -19,9 +19,11 @@ def  courseProfile():
 def hole1():
     return(
 
+
         rx.text("Hole 1, The Gorge"),
         rx.text("Par 5 for all tees. Keep driver in the bag – not needed. Don’t miss right, everything slopes that way."),
         rx.image(src="/imgHoles/map1.jpg"),
+
     )
 
 def hole2():
