@@ -83,7 +83,7 @@ def showImage(player: dict, i: int):
                     ),
 
                     rx.text(
-                         f"{player["firstName"]} {player["lastName"]}",
+                         f"{player['firstName']} {player['lastName']}",
 
                          size="4",
                          style={"line_height": "1"}  # Adjust the value as needed
