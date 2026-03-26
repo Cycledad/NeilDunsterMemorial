@@ -38,9 +38,9 @@ def index():
         rx.center(
             rx.image(
                 src="/logo.jpg",
-                width="80vw",
+                width="65vw",
                 height="80vh",
-                margin="25px"
+                margin="125px"
             ),
         )
     ),
@@ -50,7 +50,7 @@ def index():
                 src="/logo.jpg",
                 width="80vw",
                 height="60vh",
-                margin="25px"
+                margin="125px"
             ),
         )
     )
