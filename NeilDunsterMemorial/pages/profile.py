@@ -5,7 +5,7 @@ from NeilDunsterMemorial.Nav import navigation
 @rx.page("/profile", title="Course Profile")
 def profile():
     return (
-
+        navigation.navbar_dropdown(),
         rx.text(
             "Congratulations to Brian Webster on his retirement as of Oct 2025.",
             size="6",
