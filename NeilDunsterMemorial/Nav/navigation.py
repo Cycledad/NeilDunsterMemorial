@@ -8,7 +8,8 @@ def navbar_link(text: str, url: str) -> rx.Component:
 
 
 def navbar_dropdown() -> rx.Component:
-    return rx.box(
+    return (
+        rx.box(
         rx.desktop_only(
             rx.hstack(
                 rx.hstack(
@@ -19,8 +20,12 @@ def navbar_dropdown() -> rx.Component:
                         border_radius="25%",
                     ),
                     rx.heading("Neil Dunster Memorial Golf Tournament", size="7", weight="bold"),
-                    align_items="center",
+                    text_align="start",
+                    # align_items="start",
+                    # align_items="center",
+
                 ),
+
                 rx.hstack(
                     navbar_link("Home", "/"),
                     navbar_link("News", "/news"),
@@ -48,6 +53,7 @@ def navbar_dropdown() -> rx.Component:
                             rx.menu.item("2025", on_click=events.sharedState.eventMenuItem2025),
                             rx.menu.item("2026", on_click=events.sharedState.eventMenuItem2026),
                         ),
+                    justify="end",
                     ),
                     navbar_link("Participants", "/players"),
                     #navbar_link("Results", "/results"),
@@ -55,12 +61,18 @@ def navbar_dropdown() -> rx.Component:
                     navbar_link("Sponsors", "/sponsors"),
                     justify="end",
                     spacing="5",
+                    margin_left="500px",
                 ),
+                # justify="end",
                 justify="between",
-                align_items="center",
+                align="center",
 
+                # align_items="center",
+           ),
+           position="fixed",
+           bg=rx.color("green"),
+           # margin="0"
 
-            ),
 
         ),
         rx.mobile_and_tablet(
@@ -73,7 +85,7 @@ def navbar_dropdown() -> rx.Component:
                     align_items="center",
                 ),
                 rx.menu.root(
-                    rx.menu.trigger(rx.icon("menu", size=30)),
+                    rx.menu.trigger(rx.icon("menu", size=30, margin_left="100px")),
                     rx.menu.content(
                         rx.menu.item("Home", on_click=events.sharedState.eventMenuItemHome),
                         rx.menu.item("News", on_click=events.sharedState.eventMenuItemNews),
@@ -99,16 +111,24 @@ def navbar_dropdown() -> rx.Component:
                         rx.menu.item("Sponsors", on_click=events.sharedState.eventMenuItemSponsors),
                     ),
                     justify="end",
+                    # margin_left="500px",
+
                 ),
                 justify="between",
                 align_items="center",
+                position="fixed",
+                bg=rx.color("green"),
+                # margin="0"
             ),
+            # margin="0"
         ),
         #bg=rx.color("accent", 3),
-        bg=rx.color("green"),
+        # bg=rx.color("green"),
         padding="1em",
         # position="fixed",
         # top="0px",
         # z_index="5",
         width="100%",
-    )
+        margin_bottom="50px",
+        margin_top="0px"
+    ))

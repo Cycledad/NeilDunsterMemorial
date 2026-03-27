@@ -40,20 +40,22 @@ def index():
                 src="/logo.jpg",
                 width="65vw",
                 height="80vh",
-                margin="100px"
+                margin="40px"
             ),
-        )
+        ),
+        margin="0"
     ),
     rx.mobile_and_tablet(
- rx.center(
+        rx.center(
             rx.image(
                 src="/logo.jpg",
                 width="80vw",
                 height="60vh",
-                margin="125px"
+                margin="40px"
             ),
-        )
-    )
+        ),
+        margin="0"
+    ),
 
  ),
 
