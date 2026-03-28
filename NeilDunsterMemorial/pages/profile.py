@@ -21,8 +21,9 @@ def  courseProfile():
                 "boating, fishing and vacationing amidst the St. Lawrence River’s natural beauty.",
                 size="5",
                 padding="20px",
-                padding_bottom="25px"
-
+                padding_bottom="25px",
+                # font = "sans-serif",
+                #font = "Helvetica",
             ),
 
     )
@@ -142,7 +143,7 @@ def hole6():
 def hole7():
     return(
 
-        rx.text(
+         rx.text(
             "Hole 7 - Rolling Meadows",
             size="5",
             padding_top="45px",
@@ -389,7 +390,9 @@ def profile():
             hole18(),
 
             margin="0px",
-        )
+
+        ),
+
     )
 
 

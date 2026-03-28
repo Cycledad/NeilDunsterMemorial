@@ -19,7 +19,11 @@ def navbar_dropdown() -> rx.Component:
                             height="auto",
                             border_radius="25%",
                         ),
-                        rx.heading("Neil Dunster Memorial Golf Tournament", size="7", weight="bold"),
+                        rx.heading(
+                            "Neil Dunster Memorial Golf Tournament",
+                            size="7",
+                            weight="bold"
+                        ),
                         text_align="start",
                         # align_items="start",
                         # align_items="center",
@@ -33,7 +37,11 @@ def navbar_dropdown() -> rx.Component:
                         rx.menu.root(
                             rx.menu.trigger(
                                 rx.button(
-                                    rx.text("Memorial Years", size="4", weight="medium", color="black"),
+                                    rx.text("Memorial Years",
+                                            size="4",
+                                            weight="medium",
+                                            color="black"
+                                            ),
                                     rx.icon("chevron-down"),
                                     weight="medium",
                                     variant="ghost",
@@ -79,9 +87,15 @@ def navbar_dropdown() -> rx.Component:
             rx.hstack(
                 rx.hstack(
                     rx.image(
-                        src="/logo.jpg", width="2em", height="auto", border_radius="25%"
+                        src="/logo.jpg",
+                        width="2em",
+                        height="auto",
+                        border_radius="25%"
                     ),
-                    rx.heading("Neil Dunster Memorial", size="6", weight="bold"),
+                    rx.heading("Neil Dunster Memorial",
+                               size="6",
+                               weight="bold"
+                    ),
                     align_items="center",
                 ),
                 rx.menu.root(
