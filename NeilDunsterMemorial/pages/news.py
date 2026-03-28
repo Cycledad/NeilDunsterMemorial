@@ -10,7 +10,7 @@ def brianWebsterRetirement():
                     "Congratulations to Brian Webster on his retirement as of Oct 2025.",
                     size="6",
                     padding="10px",
-                    background_color="var(--tomato-3)",
+                    # background_color="var(--tomato-3)",
 
 
                 ),
@@ -73,9 +73,10 @@ def news():
      rx.container(
          rx.vstack(
             brianWebsterRetirement(),
-             wayneGrandChildren(),
-             #brianMaleGrandchild(),
-             donationJune2025(),
+             # wayneGrandChildren(),
+             # brianMaleGrandchild(),
+             donationJune2025()
+
          )
      ),
 
