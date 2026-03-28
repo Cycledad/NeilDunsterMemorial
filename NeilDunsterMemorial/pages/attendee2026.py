@@ -16,7 +16,9 @@ def actionMenuItem2026():
 
         rx.text(
             "Coming soon!",
-            size="6",)
+            size="6",),
+
+        padding_top = "50px",
     )
 
 

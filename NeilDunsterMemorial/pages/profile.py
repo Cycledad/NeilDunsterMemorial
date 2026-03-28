@@ -7,7 +7,7 @@ def  courseProfile():
             rx.text(
                 "Course Profile",
                 size="6",
-                padding="10px",
+                padding_top="50px",
             ),
 
             rx.text(

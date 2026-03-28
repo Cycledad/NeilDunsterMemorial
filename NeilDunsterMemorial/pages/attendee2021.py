@@ -16,7 +16,8 @@ def actionMenuItem2021():
         rx.text(
             "Unfortunately, due to covid, the event was cancelled in 2021",
             size="6",
-        )
+        ),
+        padding_top="50px",
     )
 
 

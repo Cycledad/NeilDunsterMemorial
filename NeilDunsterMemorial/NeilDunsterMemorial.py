@@ -27,6 +27,10 @@ from .Nav import navigation
 from .GlobalState import events
 from .pages import *
 
+global_CSS = {
+    "margin" : "0",
+    "padding" : "0"
+}
 
 @rx.page("/index", title="Home")
 def index():
@@ -43,7 +47,7 @@ def index():
                 margin="40px"
             ),
         ),
-        margin="0"
+
     ),
     rx.mobile_and_tablet(
         rx.center(
@@ -54,13 +58,14 @@ def index():
                 margin="40px"
             ),
         ),
-        margin="0"
+
     ),
 
  ),
 
 
-app = rx.App()
+app = rx.App(style=global_CSS)
+app.add_page(page2017.attendees2017)
 app.add_page(index)
 app.add_page(viewer.viewer)
 app.add_page(page2017.attendees2017)

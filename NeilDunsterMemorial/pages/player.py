@@ -96,8 +96,11 @@ def showImage(player: dict, i: int):
                         margin_bottom="15px"
                     ),
                     spacing="1", # Set spacing of the parent Vstack to 0
-                    margin_left="50px"
+                    margin_left="50px",
+
+                    padding_top="50px",
                 ),
+
     )
 
 
