@@ -8,12 +8,11 @@ def actionMenuItem2017():
     return rx.container(
         rx.desktop_only(
                 rx.text(
-                "2017",
-                size="9",
-                weight="bold",
-                margin_bottom="25px"
-
-            ),
+                    "2017",
+                    size="9",
+                    weight="bold",
+                    margin_bottom="25px",
+                ),
 
             rx.text(
                 "The inaugural year had a total of 12 people competing with the event taking place at Smugglers Glen Golf Course on June 17 - 18. "
@@ -86,7 +85,6 @@ def actionMenuItem2017():
                     size="9",
                     weight="bold",
                     margin_bottom="25px"
-
                 ),
 
                 rx.text(
@@ -150,7 +148,8 @@ def actionMenuItem2017():
                     list_style_type="none"
                 ),
             )
-        )
+        ),
+        padding_top="50px",
     )
 
 

@@ -27,6 +27,13 @@ from .Nav import navigation
 from .GlobalState import events
 from .pages import *
 
+global_CSS = {
+    "margin" : "0",
+    "padding" : "0",
+    "font_family": "Comic Sans MS",
+    "font_size": "16px",
+# "font" : "sans-serif",
+}
 
 @rx.page("/index", title="Home")
 def index():
@@ -41,10 +48,11 @@ def index():
                 src="/logo.jpg",
                 width="65vw",
                 height="80vh",
-                margin="40px"
+                margin="40px",
+                margin_top="125px"
             ),
         ),
-        margin="0"
+
     ),
     rx.mobile_and_tablet(
         rx.center(
@@ -52,10 +60,11 @@ def index():
                 src="/logo.jpg",
                 width="80vw",
                 height="60vh",
-                margin="40px"
+                margin="40px",
+                margin_top="100px"
             ),
         ),
-        margin="0"
+
     ),
 =======
     rx.center(
@@ -71,7 +80,10 @@ def index():
  ),
 
 
-app = rx.App()
+# app = rx.App()
+app = rx.App(style=global_CSS)
+
+app.add_page(page2017.attendees2017)
 app.add_page(index)
 app.add_page(viewer.viewer)
 app.add_page(page2017.attendees2017)

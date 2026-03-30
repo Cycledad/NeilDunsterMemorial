@@ -9,7 +9,7 @@ def brianWebsterRetirement():
                 rx.text(
                     "Congratulations to Brian Webster on his retirement as of Oct 2025.",
                     size="6",
-                    padding="10px",
+                    padding_top="50px",
                     # background_color="var(--tomato-3)",
 
 

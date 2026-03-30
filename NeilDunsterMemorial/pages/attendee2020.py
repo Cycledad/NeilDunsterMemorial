@@ -16,7 +16,8 @@ def actionMenuItem2020():
         rx.text(
             "Unfortunately, due to covid, the event was cancelled in 2020",
             size="6",
-        )
+        ),
+        padding_top="50px",
     )
 
 @rx.page("/attendees2020", title="Attendees 2020")

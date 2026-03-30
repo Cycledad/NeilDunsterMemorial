@@ -10,68 +10,76 @@ def navbar_link(text: str, url: str) -> rx.Component:
 def navbar_dropdown() -> rx.Component:
     return (
         rx.box(
-        rx.desktop_only(
-            rx.hstack(
+            rx.desktop_only(
                 rx.hstack(
-                    rx.image(
-                        src="/logo.jpg",
-                        width="2.25em",
-                        height="auto",
-                        border_radius="25%",
+                    rx.hstack(
+                        rx.image(
+                            src="/logo.jpg",
+                            width="2.25em",
+                            height="auto",
+                            border_radius="25%",
+                        ),
+                        rx.heading(
+                            "Neil Dunster Memorial Golf Tournament",
+                            size="7",
+                            weight="bold"
+                        ),
+                        text_align="start",
+                        # align_items="start",
+                        # align_items="center",
+
                     ),
-                    rx.heading("Neil Dunster Memorial Golf Tournament", size="7", weight="bold"),
-                    text_align="start",
-                    # align_items="start",
-                    # align_items="center",
 
-                ),
-
-                rx.hstack(
-                    navbar_link("Home", "/"),
-                    navbar_link("News", "/news"),
-                    navbar_link("Profile", "/profile"),
-                    rx.menu.root(
-                        rx.menu.trigger(
-                            rx.button(
-                                rx.text("Memorial Years", size="4", weight="medium", color="black"),
-                                rx.icon("chevron-down"),
-                                weight="medium",
-                                variant="ghost",
-                                size="3",
-                                color="black",
+                    rx.hstack(
+                        navbar_link("Home", "/"),
+                        navbar_link("News", "/news"),
+                        navbar_link("Profile", "/profile"),
+                        rx.menu.root(
+                            rx.menu.trigger(
+                                rx.button(
+                                    rx.text("Memorial Years",
+                                            size="4",
+                                            weight="medium",
+                                            color="black"
+                                            ),
+                                    rx.icon("chevron-down"),
+                                    weight="medium",
+                                    variant="ghost",
+                                    size="3",
+                                    color="black",
+                                ),
                             ),
+                            rx.menu.content(
+                                rx.menu.item("2017", on_click=events.sharedState.eventMenuItem2017),
+                                rx.menu.item("2018", on_click=events.sharedState.eventMenuItem2018),
+                                rx.menu.item("2019", on_click=events.sharedState.eventMenuItem2019),
+                                rx.menu.item("2020", on_click=events.sharedState.eventMenuItem2020),
+                                rx.menu.item("2021", on_click=events.sharedState.eventMenuItem2021),
+                                rx.menu.item("2022", on_click=events.sharedState.eventMenuItem2022),
+                                rx.menu.item("2023", on_click=events.sharedState.eventMenuItem2023),
+                                rx.menu.item("2024", on_click=events.sharedState.eventMenuItem2024),
+                                rx.menu.item("2025", on_click=events.sharedState.eventMenuItem2025),
+                                rx.menu.item("2026", on_click=events.sharedState.eventMenuItem2026),
+                            ),
+                        justify="end",
                         ),
-                        rx.menu.content(
-                            rx.menu.item("2017", on_click=events.sharedState.eventMenuItem2017),
-                            rx.menu.item("2018", on_click=events.sharedState.eventMenuItem2018),
-                            rx.menu.item("2019", on_click=events.sharedState.eventMenuItem2019),
-                            rx.menu.item("2020", on_click=events.sharedState.eventMenuItem2020),
-                            rx.menu.item("2021", on_click=events.sharedState.eventMenuItem2021),
-                            rx.menu.item("2022", on_click=events.sharedState.eventMenuItem2022),
-                            rx.menu.item("2023", on_click=events.sharedState.eventMenuItem2023),
-                            rx.menu.item("2024", on_click=events.sharedState.eventMenuItem2024),
-                            rx.menu.item("2025", on_click=events.sharedState.eventMenuItem2025),
-                            rx.menu.item("2026", on_click=events.sharedState.eventMenuItem2026),
-                        ),
-                    justify="end",
+                        navbar_link("Participants", "/players"),
+                        #navbar_link("Results", "/results"),
+                        navbar_link("Gallery", "/gallery"),
+                        navbar_link("Sponsors", "/sponsors"),
+                        justify="end",
+                        spacing="5",
+                        margin_left="500px",
                     ),
-                    navbar_link("Participants", "/players"),
-                    #navbar_link("Results", "/results"),
-                    navbar_link("Gallery", "/gallery"),
-                    navbar_link("Sponsors", "/sponsors"),
-                    justify="end",
-                    spacing="5",
-                    margin_left="500px",
-                ),
-                # justify="end",
-                justify="between",
-                align="center",
+                    # justify="end",
+                    justify="between",
+                    align="center",
 
-                # align_items="center",
-           ),
+                    # align_items="center",
+               ),
            position="fixed",
            bg=rx.color("green"),
-           # margin="0"
+           width="99vw"
 
 
         ),
@@ -79,9 +87,15 @@ def navbar_dropdown() -> rx.Component:
             rx.hstack(
                 rx.hstack(
                     rx.image(
-                        src="/logo.jpg", width="2em", height="auto", border_radius="25%"
+                        src="/logo.jpg",
+                        width="2em",
+                        height="auto",
+                        border_radius="25%"
                     ),
-                    rx.heading("Neil Dunster Memorial", size="6", weight="bold"),
+                    rx.heading("Neil Dunster Memorial",
+                               size="6",
+                               weight="bold"
+                    ),
                     align_items="center",
                 ),
                 rx.menu.root(
@@ -89,7 +103,7 @@ def navbar_dropdown() -> rx.Component:
                     rx.menu.content(
                         rx.menu.item("Home", on_click=events.sharedState.eventMenuItemHome),
                         rx.menu.item("News", on_click=events.sharedState.eventMenuItemNews),
-                        rx.menu.item("Profile", on_click=events.sharedState.eventMenuItemNews),
+                        rx.menu.item("Profile", on_click=events.sharedState.eventMenuItemProfile),
                         rx.menu.sub(
                             rx.menu.sub_trigger("Memorial Years"),
                             rx.menu.sub_content(
@@ -118,17 +132,17 @@ def navbar_dropdown() -> rx.Component:
                 align_items="center",
                 position="fixed",
                 bg=rx.color("green"),
-                # margin="0"
+                width="95vw"
             ),
             # margin="0"
         ),
         #bg=rx.color("accent", 3),
         # bg=rx.color("green"),
-        padding="1em",
+        # padding_top="1px",
         # position="fixed",
         # top="0px",
         # z_index="5",
-        width="100%",
-        margin_bottom="50px",
-        margin_top="0px"
+        # width="100%",
+        # margin_bottom="50px",
+        # margin_top="0px"
     ))
