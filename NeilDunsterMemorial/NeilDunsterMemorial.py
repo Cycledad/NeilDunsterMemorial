@@ -34,6 +34,7 @@ def index():
  return (
     navigation.navbar_dropdown(),
 
+<<<<<<< HEAD
     rx.desktop_only(
         rx.center(
             rx.image(
@@ -56,6 +57,16 @@ def index():
         ),
         margin="0"
     ),
+=======
+    rx.center(
+        rx.image(
+            src="/gallery/neil2.jpg",
+            width="80vw",
+            height="80vh",
+            margin="25px"
+        ),
+    )
+>>>>>>> parent of 631d206 (added mobile_and_tablet mode when displaying homepage pic)
 
  ),
 
